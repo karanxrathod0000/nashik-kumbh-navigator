@@ -3,7 +3,7 @@ from PIL import Image, ImageDraw, ImageFont
 import os
 
 def generate_field_poster_qr():
-    url = "https://github.com/karanparanox/nashik-kumbh-navigator/releases/latest"
+    url = "https://github.com/karanxrathod0000/nashik-kumbh-navigator/releases/latest"
     qr = qrcode.QRCode(
         version=4,
         error_correction=qrcode.constants.ERROR_CORRECT_H,

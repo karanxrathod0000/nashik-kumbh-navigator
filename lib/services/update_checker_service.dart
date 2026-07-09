@@ -7,7 +7,7 @@ import 'package:url_launcher/url_launcher.dart';
 /// Service to check the official GitHub repository for direct APK updates.
 /// Especially useful for volunteers and pilgrims who sideloaded the app.
 class UpdateCheckerService {
-  static const String _githubOwner = 'karanparanox';
+  static const String _githubOwner = 'karanxrathod0000';
   static const String _githubRepo = 'nashik-kumbh-navigator';
   static const String _releasesApiUrl =
       'https://api.github.com/repos/$_githubOwner/$_githubRepo/releases/latest';

@@ -1,8 +1,8 @@
 # Nashik Kumbh Navigator — Simhastha 2027 Official Pilgrim & Volunteer App
 
 [![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?logo=flutter)](https://flutter.dev)
-[![Release](https://img.shields.io/badge/Release-v1.0.0-FF8C42?logo=github)](https://github.com/karanparanox/nashik-kumbh-navigator/releases/latest)
-[![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS-4CAF50?logo=android)](https://github.com/karanparanox/nashik-kumbh-navigator/releases/latest)
+[![Release](https://img.shields.io/badge/Release-v1.0.0-FF8C42?logo=github)](https://github.com/karanxrathod0000/nashik-kumbh-navigator/releases/latest)
+[![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS-4CAF50?logo=android)](https://github.com/karanxrathod0000/nashik-kumbh-navigator/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Official navigation and civic safety application for **Nashik Kumbh Mela Simhastha 2027** pilgrims, volunteers, and emergency response teams. Built with Flutter, Riverpod, Google Maps Platform, and Firebase.
@@ -11,7 +11,7 @@ Official navigation and civic safety application for **Nashik Kumbh Mela Simhast
 
 ## 📲 Download & Install (Direct APK)
 
-1. Download the latest APK: [NashikKumbhNavigator-v1.0.0.apk](https://github.com/karanparanox/nashik-kumbh-navigator/releases/latest)
+1. Download the latest APK: [NashikKumbhNavigator-v1.0.0.apk](https://github.com/karanxrathod0000/nashik-kumbh-navigator/releases/latest)
 2. On your Android phone, tap the downloaded file.
 3. If prompted **"Install blocked"** or **"Install unknown apps"**, tap **Settings** → enable **Allow from this source** → go back and tap **Install**.
 4. Open the app and choose **Continue as Guest** for instant access, or sign in with Google/Phone for saved places and personalized alerts.
@@ -51,7 +51,7 @@ Pilgrims and volunteers at Nashik railway stations, Sadhugram entry gates, and h
 
 Since direct APK distributions do not update automatically through an app store:
 1. Every new release bumps `versionCode` and `versionName` (e.g., `v1.0.1`).
-2. The app includes an integrated **GitHub Release Update Checker** (`UpdateCheckerService`) that pings the official GitHub API (`https://api.github.com/repos/karanparanox/nashik-kumbh-navigator/releases/latest`) and notifies guest or sideloaded users when a new APK is ready to install.
+2. The app includes an integrated **GitHub Release Update Checker** (`UpdateCheckerService`) that pings the official GitHub API (`https://api.github.com/repos/karanxrathod0000/nashik-kumbh-navigator/releases/latest`) and notifies guest or sideloaded users when a new APK is ready to install.
 3. The latest release link above permanently resolves to the newest available release binary.
 
 ---
