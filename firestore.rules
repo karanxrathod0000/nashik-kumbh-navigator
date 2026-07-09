@@ -1,0 +1,50 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function isOwner(uid) {
+      return isAuthenticated() && request.auth.uid == uid;
+    }
+    
+    function isAdmin() {
+      return isAuthenticated() && request.auth.token.isAdmin == true;
+    }
+
+    // Users Collection & Subcollections
+    match /users/{uid} {
+      allow read, write: if isOwner(uid);
+      
+      match /savedPlaces/{placeId} {
+        allow read, write: if isOwner(uid);
+      }
+      
+      match /emergencyContacts/{contactId} {
+        allow read, write: if isOwner(uid);
+      }
+    }
+
+    // Locations Collection (Ghats, Parking, Medical, Toilets, etc.)
+    match /locations/{locationId} {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin();
+    }
+
+    // Alerts Collection (Control Room Feed)
+    match /alerts/{alertId} {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin();
+    }
+
+    // Family / Group Tracker Collection
+    match /groups/{groupId} {
+      allow create: if isAuthenticated();
+      allow read, update, delete: if isAuthenticated() && 
+          (request.auth.uid in resource.data.members || request.auth.uid == resource.data.createdBy);
+    }
+  }
+}
